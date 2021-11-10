@@ -1,0 +1,21 @@
+.header
+  grid-area: header
+  display: grid
+  grid-template-areas: "logo nav button"
+  grid-template-columns: 1fr minmax(280px, 1170px) 1fr
+  align-items: center
+  justify-content: start
+
+.logo
+  grid-area: logo
+  margin-left: 60px
+
+.nav
+  grid-area: nav
+  justify-self: center
+
+.btn
+  grid-area: button
+  justify-self: end
+  margin-right: 60px
+  

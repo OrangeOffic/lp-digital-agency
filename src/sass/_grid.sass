@@ -1,19 +1,10 @@
 .grid
   display: grid
-  grid-template-areas:  "logo nav button" ". content ." "footer footer footer"
+  grid-template-areas:  "header header header" ". content ." "footer footer footer"
   grid-template-columns: 1fr minmax(280px, 1170px) 1fr
   grid-template-rows: 122px 1fr 240px
+  align-items: center
   
-header 
-  grid-area: header
-.nav
-  grid-area: nav
-
-.logo
-  grid-area: logo
-
-.btn
-  grid-area: button
 
 .content
   grid-area: content
