@@ -342,6 +342,51 @@ template {
   display: none;
 }
 
+.grid {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "logo nav button" ". content ." "footer footer footer";
+  -ms-grid-columns: 1fr minmax(280px, 1170px) 1fr;
+      grid-template-columns: 1fr minmax(280px, 1170px) 1fr;
+  -ms-grid-rows: 122px 1fr 240px;
+      grid-template-rows: 122px 1fr 240px;
+}
+
+header {
+  grid-area: header;
+}
+
+.nav {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: nav;
+}
+
+.logo {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: logo;
+}
+
+.btn {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: button;
+}
+
+.content {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: content;
+}
+
+.footer {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: footer;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
