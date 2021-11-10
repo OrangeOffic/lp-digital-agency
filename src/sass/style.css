@@ -354,6 +354,11 @@ body {
   color: #3B3E43;
 }
 
+a {
+  text-decoration: none;
+  color: #ffffffef;
+}
+
 .button {
   padding: 20px 50px;
   font-family: 'DM Sans', sans-serif;
@@ -539,7 +544,6 @@ body {
       -ms-flex-direction: row;
           flex-direction: row;
   padding: 0;
-  color: white;
   list-style: none;
   font-family: 'DM Sans', sans-serif;
   font-weight: 500;
@@ -548,14 +552,28 @@ body {
 
 .nav-list__item {
   margin-right: 32px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .nav-list__item:last-child {
   margin-right: 0;
 }
 
+.nav-list__item:hover {
+  cursor: pointer;
+}
+
+.nav-list__item:hover a {
+  color: white;
+}
+
 .nav-list__item_active {
   font-family: 'DM Sans', sans-serif;
   font-weight: 700;
+}
+
+.nav-list__item_active a {
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */

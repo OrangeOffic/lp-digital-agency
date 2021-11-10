@@ -9,6 +9,10 @@ body
   background-color: blue
   color: $grey
 
+a
+  text-decoration: none
+  color: #ffffffef
+
 .button
   padding: 20px 50px
   +bold
@@ -118,13 +122,19 @@ body
   display: flex
   flex-direction: row
   padding: 0
-  color: white
   list-style: none
   +medium
   font-size: 16px
   &__item
     margin-right: 32px
+    transition: 0.2s
     &:last-child
       margin-right: 0
+    &:hover
+      cursor: pointer
+      a
+        color: white
     &_active
       +bold
+      a
+        color: white
