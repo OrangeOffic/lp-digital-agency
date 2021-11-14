@@ -1,18 +1,25 @@
 .header
+  width: 100%
   grid-area: header
   display: grid
   grid-template-areas: "logo nav button"
   grid-template-columns: 1fr minmax(280px, 1170px) 1fr
   align-items: center
-  justify-content: start
+  justify-items: start
 
 .logo
   grid-area: logo
+  justify-self: center
   margin-left: 60px
+  img
+    display: block
 
 .nav
+  // display: none
   grid-area: nav
   justify-self: center
+  &__close
+    display: none
 
 .btn
   grid-area: button
